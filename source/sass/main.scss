@@ -7,13 +7,15 @@
 
 }
 
-// Overflow, font 
+// Overflow, font, background
 body,
 html {
 
     overflow-x: hidden;
 
     font-family: 'Barlow Condensed', sans-serif;
+
+    background: #eee;
 
 }
 
@@ -102,6 +104,11 @@ main {
 
         width: 600px;
         height: 700px;
+
+        background: rgb(116, 178, 189);
+        box-shadow: 1px 2px 6px #333;
+
+        color: #333;
         
         & img {
 
