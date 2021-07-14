@@ -11,17 +11,22 @@ html {
   background: #eee;
 }
 
+body {
+  transition: 0.2s linear;
+}
+
 header {
   display: flex;
   justify-content: space-between;
-  margin: 0.5em 2em 0 2em;
+  margin: 0.5em 2em 5em 2em;
 }
 header nav {
-  text-align: right;
-  margin-bottom: 5em;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
 }
 header nav a {
-  display: inline-block;
+  display: block;
   color: inherit;
   text-decoration: inherit;
   font-size: 30px;
@@ -32,11 +37,15 @@ header nav a:hover {
   text-decoration: underline;
   opacity: 0.8;
 }
+header nav .toggle {
+  margin-left: 2em;
+}
 
 main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 main :nth-child(1) h2 {
   text-align: left;
@@ -56,10 +65,12 @@ main div {
   background: #74b2bd;
   box-shadow: 1px 2px 6px #333;
   color: #333;
+  margin-bottom: 3em;
 }
 main div img {
   width: 100%;
   height: auto;
+  border-radius: 3px;
 }
 main div p {
   margin-bottom: 1.5em;
@@ -71,13 +82,31 @@ main div h2 {
 }
 
 footer {
-  margin-top: 5em;
+  margin-top: 2em;
 }
 footer div {
   text-align: center;
 }
 footer div p {
   margin-top: 4px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 24px;
+  width: 50px;
+  padding: 5px 8px;
+  background: #b6b6b6;
+  border-radius: 50px;
+  cursor: pointer;
+  transform: scale(1);
+  box-shadow: 2px 1px 1px #333;
 }
 
 /*# sourceMappingURL=style.css.map */
