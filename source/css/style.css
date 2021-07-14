@@ -10,4 +10,16 @@ html {
   font-family: "Barlow Condensed", sans-serif;
 }
 
+header nav {
+  text-align: right;
+}
+header nav a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: inherit;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0.5em 2em 0 0;
+}
+
 /*# sourceMappingURL=style.css.map */
