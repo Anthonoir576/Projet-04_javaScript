@@ -10,8 +10,14 @@ html {
   font-family: "Barlow Condensed", sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 2em 0 2em;
+}
 header nav {
   text-align: right;
+  margin-bottom: 5em;
 }
 header nav a {
   display: inline-block;
@@ -19,7 +25,55 @@ header nav a {
   text-decoration: inherit;
   font-size: 30px;
   font-weight: 600;
-  margin: 0.5em 2em 0 0;
+  margin-left: 2em;
+}
+header nav a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main :nth-child(1) h2 {
+  text-align: left;
+}
+main :nth-child(2) h2 {
+  text-align: center;
+}
+main :nth-child(3) h2 {
+  text-align: right;
+}
+main div {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  width: 600px;
+  height: 700px;
+}
+main div img {
+  width: 100%;
+  height: auto;
+}
+main div p {
+  margin-bottom: 1.5em;
+  text-align: justify;
+  padding: 20px;
+}
+main div h2 {
+  padding: 20px;
+}
+
+footer {
+  margin-top: 5em;
+}
+footer div {
+  text-align: center;
+}
+footer div p {
+  margin-top: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

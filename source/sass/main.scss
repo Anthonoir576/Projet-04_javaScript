@@ -1,4 +1,4 @@
-// RESET
+// ###################### RESET ########################
 * {
 
     margin: 0;
@@ -17,11 +17,20 @@ html {
 
 }
 
+// ####################### CSS #########################
+
+// HEADER NAVBAR / LOGO
 header {
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0.5em 2em 0 2em;
 
     & nav {
 
         text-align: right;
+        margin-bottom: 5em;
 
         & a {
 
@@ -32,9 +41,110 @@ header {
             font-size: 30px;
             font-weight: 600;
 
-            margin: 0.5em 2em 0 0;
+            margin-left: 2em;
+
+            &:hover {
+
+                text-decoration: underline;
+                opacity: 0.8;
+
+            }
         }
 
     }
 
 }
+
+// MAIN / CARD
+main {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & :nth-child(1) {
+
+        & h2 {
+
+            text-align: left;
+
+        }
+
+    }
+
+    & :nth-child(2) {
+
+        & h2 {
+
+            text-align: center;
+
+        }
+
+    }
+    
+    & :nth-child(3) {
+
+        & h2 {
+
+            text-align: right;
+
+        }
+
+    }
+
+    & div {
+
+        
+        border: 1px solid black;
+        border-radius: 10px;
+
+        text-align: center;
+
+        width: 600px;
+        height: 700px;
+        
+        & img {
+
+            width: 100%;
+            height: auto;
+
+        }
+
+        & p {
+
+            margin-bottom: 1.5em;
+            text-align: justify;
+            padding: 20px;
+
+        }
+
+        & h2 {
+
+            padding: 20px;
+
+        }
+
+    }
+
+}
+
+// FOOTER
+footer {
+
+    margin-top: 5em;
+
+    & div {
+
+        text-align: center;
+
+        & p {
+
+            margin-top: 4px;
+
+        }
+
+    }
+
+}
+
+// ######################## JS #########################
